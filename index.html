@@ -22,7 +22,7 @@
   }
 </style>
 <script src="libs/1.0.0/createjs.min.js"></script>
-<script src="index.js?1777486975469"></script>
+<script src="index.js?1777488000772"></script>
 <script>
 // Global Scripts
 	var jsonData;
@@ -160,10 +160,18 @@ document.head.appendChild(googleFontsLink);
 */
 var fontFamily = "Noto Sans Arabic";
 var fontReady = false;
-var font = new FontFace(
-  "Noto Sans Arabic",
-  "url(https://fonts.gstatic.com/s/notosansarabic/v18/nwpxtLGrOAZMl5nJ_wfgRg3DrWFZWsnVBJ_sS6tlqHHFlhQ5l3sQWIHPqzCfyGyvu3CBFQLaig.woff2)"
-);
+Promise.all([
+  new FontFace("Noto Sans Arabic", "url(fonts/NotoSansArabic-Regular.woff2)", { weight: "400" }).load(),
+  new FontFace("Noto Sans Arabic", "url(fonts/NotoSansArabic-Medium.woff2)", { weight: "500" }).load(),
+  new FontFace("Noto Sans Arabic", "url(fonts/NotoSansArabic-SemiBold.woff2)", { weight: "600" }).load(),
+  new FontFace("Noto Sans Arabic", "url(fonts/NotoSansArabic-Bold.woff2)", { weight: "700" }).load()
+]).then(function(fonts) {
+  fonts.forEach(function(f) { document.fonts.add(f); });
+  fontReady = true;
+}).catch(function(err) {
+  console.warn("Font load error:", err);
+  fontReady = true;
+});
 //sounds
 var soundsArray = [
   { id: "right_answer", src: mediaPath + "sfx/right_answer.mp3" },
@@ -451,6 +459,6 @@ function handleComplete(evt,comp) {
 		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1800px; height:1200px; position: absolute; left: 0px; top: 0px; display: none;">
 		</div>
 	</div>
-    <div id='_preload_div_' style='position:absolute; top:0; left:0; display: inline-block; height:1200px; width: 1800px; text-align: center;'>	<span style='display: inline-block; height: 100%; vertical-align: middle;'></span>	<img src=images/_preloader.gif?1777486975470 style='vertical-align: middle; max-height: 100%'/></div>
+    <div id='_preload_div_' style='position:absolute; top:0; left:0; display: inline-block; height:1200px; width: 1800px; text-align: center;'>	<span style='display: inline-block; height: 100%; vertical-align: middle;'></span>	<img src=images/_preloader.gif?1777488000773 style='vertical-align: middle; max-height: 100%'/></div>
 </body>
 </html>
