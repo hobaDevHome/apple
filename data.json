@@ -1,0 +1,228 @@
+{
+  "language": "AR",
+  "logo": "logo/logo.png",
+  "theme": "nature",
+  "themeGraphics": {
+    "gameTitle": "pics/gameTitle.png",
+    "startFrame": "startFrame.jpg",
+    "playGameFrame": "playGameFrame.jpg",
+    "textOverly": "textOverly.png",
+    "bgSet": "bgSet.png",
+    "drag": "drag.png",
+    "target": "target.png",
+    "continueBtn": "continueBtn.png",
+    "resultsFrame": "resultsFrame.jpg",
+    "instructionsOverlay": "instructionsOverlay.png",
+    "green": "green.png",
+    "yellow": "yellow.png",
+    "red": "red.png",
+    "infoImage": "infoImage.png",
+    "soundOn": "soundOn.png",
+    "soundOff": "soundOff.png",
+    "retakeBtn": "retake.png",
+    "prog_bar_1_bg": "prog_bar_1_bg.png",
+    "prog_bar_1_step_dark": "prog_bar_1_step_dark.png",
+    "prog_bar_1_step_correct1": "prog_bar_1_step_correct1.png",
+    "prog_bar_1_step_correct2": "prog_bar_1_step_correct2.png",
+    "prog_bar_1_step_wrong": "prog_bar_1_step_wrong.png",
+    "prog_bar_2_bg": "prog_bar_2_bg.png",
+    "prog_bar_2_fill": "prog_bar_2_fill.png",
+    "animation_1": "animation1.webm",
+    "nature": {
+      "font": "'Noto Sans Arabic', sans-serif"
+    },
+    "history": {
+      "font": "Arial, Helvetica, sans-serif"
+    }
+  },
+  "question": {
+    "text": {
+      "AR": "اسحب كل عنصر، وضعه في التصنيف الصحيح.",
+      "EN": ""
+    }
+  },
+  "overlay": {
+    "text": {
+      "AR": "اسحب كل عنصر وأفلته في مكانه الصحيح، عن طريق الضغط المطول عليه، ثم سحبه إلى المكان المناسب لإفلاته",
+      "EN": ""
+    }
+  },
+  "setsLabel": {
+    "set_1": {
+      "AR": "مصادر الطاقة المتجددة",
+      "EN": ""
+    },
+    "set_2": {
+      "AR": "مصادر الطاقة غير المتجددة",
+      "EN": ""
+    }
+  },
+  "elements": [
+    {
+      "id": "element_1",
+      "label": {
+        "AR": "الطاقة الكهرومائية",
+        "EN": ""
+      },
+      "hint": {
+        "AR": "الطاقة الكهرومائية مصدر متجدد يعتمد على حركة المياه.",
+        "EN": ""
+      },
+      "system_hint": {
+        "AR": "الطاقة الكهرومائية طاقة نظيفة ومستدامة، تُصنف ضمن مصادر الطاقة المتجددة.",
+        "EN": ""
+      },
+      "answer": "set_1",
+      "img": "pics/pic7.png"
+    },
+    {
+      "id": "element_2",
+      "label": {
+        "AR": "طاقة الرياح",
+        "EN": ""
+      },
+      "hint": {
+        "AR": "طاقة الرياح مصدر طبيعي متجدد يتوفر باستمرار.",
+        "EN": ""
+      },
+      "system_hint": {
+        "AR": "تُعد طاقة الرياح من مصادر الطاقة المتجددة التي يتم استغلالها لتوليد الكهرباء.",
+        "EN": ""
+      },
+      "answer": "set_1",
+      "img": "pics/pic6.png"
+    },
+    {
+      "id": "element_3",
+      "label": {
+        "AR": "الطاقة الشمسية",
+        "EN": ""
+      },
+      "hint": {
+        "AR": "الطاقة الشمسية مصدر دائم ولا ينتهي بالاستهلاك؛ فهي طاقة متجددة.",
+        "EN": ""
+      },
+      "system_hint": {
+        "AR": "الطاقة الشمسية إحدى الركائز الأساسية لمصادر الطاقة المتجددة في مصر.",
+        "EN": ""
+      },
+      "answer": "set_1",
+      "img": "pics/pic5.png"
+    },
+    {
+      "id": "element_4",
+      "label": {
+        "AR": "البترول",
+        "EN": ""
+      },
+      "hint": {
+        "AR": "البترول مصدر طاقة ينفد بمرور الوقت وكثرة الاستخدام.",
+        "EN": ""
+      },
+      "system_hint": {
+        "AR": "يُصنف البترول كمصدر طاقة أحفوري، وهو من المصادر غير المتجددة.",
+        "EN": ""
+      },
+      "answer": "set_2",
+      "img": "pics/pic3.png"
+    },
+    {
+      "id": "element_5",
+      "label": {
+        "AR": "الفحم",
+        "EN": ""
+      },
+      "hint": {
+        "AR": "الفحم من مصادر الطاقة التي تنفد ولا تتجدد.",
+        "EN": ""
+      },
+      "system_hint": {
+        "AR": "الفحم أحد أنواع الوقود الأحفوري، ويندرج تحت مصادر الطاقة غير المتجددة.",
+        "EN": ""
+      },
+      "answer": "set_2",
+      "img": "pics/pic2.png"
+    },
+    {
+      "id": "element_6",
+      "label": {
+        "AR": "الغاز الطبيعي",
+        "EN": ""
+      },
+      "hint": {
+        "AR": "الغاز الطبيعي مصدر طاقة غير متجدد ينتهي باستخدامه.",
+        "EN": ""
+      },
+      "system_hint": {
+        "AR": "الغاز الطبيعي من الموارد الطبيعية التي تنضب، ويُصنف ضمن مصادر الطاقة غير المتجددة.",
+        "EN": ""
+      },
+      "answer": "set_2",
+      "img": "pics/pic4.png"
+    }
+  ],
+  "note": {
+    "AR": "إجابة غير صحيحة",
+    "EN": "Wrong answer"
+  },
+  "continue": {
+    "AR": "متابعة",
+    "EN": "Continue"
+  },
+  "feedback_right": {
+    "AR": [
+      "أحسنت",
+      "ممتاز",
+      "إجابة صحيحة"
+    ],
+    "EN": [
+      "Well done",
+      "Excellent!",
+      "Correct answer"
+    ]
+  },
+  "feedback_wrong": {
+    "AR": [
+      "حاول مرة أخرى.",
+      "إجابة غير صحيحة"
+    ],
+    "EN": [
+      "Try again",
+      "Wrong answer"
+    ]
+  },
+  "results": {
+    "great": {
+      "title": {
+        "AR": "ممتاز",
+        "EN": "Excellent"
+      },
+      "AR": "أحسنت! أداؤك ممتاز ويُظهر فهمًا جيِّدًا لمحتوى الدرس.",
+      "EN": "Excellent! Your performance is outstanding and shows a good understanding of the lesson content."
+    },
+    "goodjob": {
+      "title": {
+        "AR": "جيد جدًا",
+        "EN": "Excellent"
+      },
+      "AR": "أداؤك جيد جدًا و فهمت جزءًا كبيرًا من الدرس. واصل المحاولة لتحسين نتيجتك.",
+      "EN": "Excellent! Your performance is outstanding and shows a good understanding of the lesson content."
+    },
+    "good": {
+      "title": {
+        "AR": "جيد",
+        "EN": "Good"
+      },
+      "AR": "أداؤك جيد، وقد فهمت الأساسيات. حاول إعادة المحاولة لتحقيق نتيجة أفضل.",
+      "EN": "Good job! You have a good understanding of the lesson. Keep trying to improve your score."
+    },
+    "fair": {
+      "title": {
+        "AR": "حاول مرة أخرى",
+        "EN": "Try Again"
+      },
+      "AR": "راجع الدرس وجرب من جديد، مع الممارسة سيتحسّن أداؤك.",
+      "EN": "Nice try, review the lesson and try again. With practice, your performance will improve."
+    }
+  }
+}
