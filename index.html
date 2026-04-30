@@ -22,10 +22,20 @@
   }
 </style>
 <script src="libs/1.0.0/createjs.min.js"></script>
-<script src="index.js?1777526724306"></script>
+<script src="index.js?1777531511759"></script>
 <script>
 // Global Scripts
-	var jsonData;
+	window.addEventListener("DOMContentLoaded", function () {
+        var preloadDiv = document.getElementById("_preload_div_");
+        if (preloadDiv) {
+          var preloaderImg = preloadDiv.querySelector("img");
+          if (preloaderImg && preloaderImg.src.includes("_preloader.gif")) {
+            // Update the src to the new file path
+            preloaderImg.src = "./preloader.gif";
+          }
+        }
+      });
+var jsonData;
 var dataLoaded = false;
 var percent = 0
 var isFirstLoad;
@@ -473,6 +483,6 @@ function handleComplete(evt,comp) {
 		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1800px; height:1200px; position: absolute; left: 0px; top: 0px; display: none;">
 		</div>
 	</div>
-    <div id='_preload_div_' style='position:absolute; top:0; left:0; display: inline-block; height:1200px; width: 1800px; text-align: center;'>	<span style='display: inline-block; height: 100%; vertical-align: middle;'></span>	<img src=images/_preloader.gif?1777526724307 style='vertical-align: middle; max-height: 100%'/></div>
+    <div id='_preload_div_' style='position:absolute; top:0; left:0; display: inline-block; height:1200px; width: 1800px; text-align: center;'>	<span style='display: inline-block; height: 100%; vertical-align: middle;'></span>	<img src=images/_preloader.gif?1777531511760 style='vertical-align: middle; max-height: 100%'/></div>
 </body>
 </html>
