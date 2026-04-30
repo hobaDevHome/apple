@@ -22,7 +22,7 @@
   }
 </style>
 <script src="libs/1.0.0/createjs.min.js"></script>
-<script src="index.js?1777493727110"></script>
+<script src="index.js?1777524011664"></script>
 <script>
 // Global Scripts
 	var jsonData;
@@ -407,12 +407,13 @@ function addInteraction(id, type, response, result){
   }
 }
 var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
-function fixIOSText(element, offset) {
-	console.log("offset called")
-	console.log("isIOS", isIOS)
+if (window.iosFixApplied === undefined) {
+  window.iosFixApplied = false;
+}
+function fixIOSText(element, offset) {	
     offset = offset || 30; 
-    if (isIOS) {
-		console.log("offset called")
+    if (isIOS && !window.iosFixApplied) {
+        console.log("offset called");
         element.y -= offset;
     }
 }</script>
@@ -469,6 +470,6 @@ function handleComplete(evt,comp) {
 		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1800px; height:1200px; position: absolute; left: 0px; top: 0px; display: none;">
 		</div>
 	</div>
-    <div id='_preload_div_' style='position:absolute; top:0; left:0; display: inline-block; height:1200px; width: 1800px; text-align: center;'>	<span style='display: inline-block; height: 100%; vertical-align: middle;'></span>	<img src=images/_preloader.gif?1777493727111 style='vertical-align: middle; max-height: 100%'/></div>
+    <div id='_preload_div_' style='position:absolute; top:0; left:0; display: inline-block; height:1200px; width: 1800px; text-align: center;'>	<span style='display: inline-block; height: 100%; vertical-align: middle;'></span>	<img src=images/_preloader.gif?1777524011665 style='vertical-align: middle; max-height: 100%'/></div>
 </body>
 </html>
